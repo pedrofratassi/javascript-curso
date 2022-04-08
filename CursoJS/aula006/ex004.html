@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+        body{
+            font-family: 'Grape Nuts', cursive;
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual é seu Nome?")
+        document.writeln(`Olá, ${nome}! Seu nome tem ${nome.length} tantas letras.`)
+
+        document.writeln(`Seu nome em MAÍSCULO é assim: ${nome.toUpperCase()}`)
+
+        document.writeln(`Seu nome em minúsculo é assim: ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
