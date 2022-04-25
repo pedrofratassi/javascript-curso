@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfândega</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fiscalização de Alfandegária de Visto de Passaporte</h1>
+    <p>Seja Bem-Vindo ao Controle de Tráfego de Passageiro</p>
+
+    Insira nesse campo sua Nacionalidade: <input type="text" name="txt_fronteira" id="txtnacao">
+
+    <input type="button" value="Confirmar" onclick="patria()">
+    <div id="result">
+
+        
+    </div>
+    <script>
+        function patria(){
+            var nacionalidade = window.document.getElementById("txtnacao")
+
+            var res = window.document.getElementById("result")
+
+            var cidadania = String(nacionalidade.value)
+
+            if(cidadania != 'Brasil'){
+                res.innerHTML = `<p>Seja bem-vindo ao Brasil <strong>visitante</strong></p>`
+            } else{
+                res.innerHTML = `<p>Bem-Vindo de volta camarada <strong>Brasileiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
